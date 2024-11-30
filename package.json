@@ -2,7 +2,9 @@
   "name": "discord-clone",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
+    "build:no-lint": "next build --no-lint",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
