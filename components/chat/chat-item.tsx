@@ -74,6 +74,7 @@ export const ChatItem = ({
     }
 
     useEffect(() => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const handleKeyDown = (event: any) => {
             if (event.key === "Escape" || event.keyCode === 27) {
                 setIsEditing(false);
@@ -115,7 +116,7 @@ export const ChatItem = ({
         form.reset({
             content: content,
         })
-    }, [content]);
+    }, [content, form]);
     const fileType = fileUrl?.split(".").pop();
 
     const isAdmin = currentMember.role === MemberRole.ADMIN;

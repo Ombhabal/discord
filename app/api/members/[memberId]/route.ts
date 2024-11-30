@@ -1,8 +1,6 @@
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
-import { error } from "console";
 import { NextResponse } from "next/server";
-import { string } from "zod";
 
 export async function DELETE(
     req: Request,
