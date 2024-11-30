@@ -18,7 +18,6 @@ const roleIconMap = {
 
 export const ServerMember = ({
     member,
-    server,
 }:ServerMemberProps) => {
 
     const params = useParams();
